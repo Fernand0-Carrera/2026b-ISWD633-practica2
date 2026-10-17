@@ -14,7 +14,7 @@ Para el CMD de windows se puede usar el siguiente comando:
 ```
 echo %NUMBER_OF_PROCESSORS%
 ```
-No obstante, para ver el número de procesadores asignados a un contenedor se puede usar el comandoÑ
+No obstante, para ver el número de procesadores asignados a un contenedor se puede usar el comando:
 ```
 docker exec <nombre-contenedor> nproc
 ```
