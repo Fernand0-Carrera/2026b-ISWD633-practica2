@@ -74,6 +74,7 @@ Como el Dockerfile tiene 7 instrucciones, por lo cual se ejecutaron 7 pasos, no 
 
 **Modificar el archivo index.html para incluir su nombre y luego crear una nueva versión de la imagen anterior**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
+Igualmente se ejecutan 7, se muestran 5, pero del 2 al 4 aparecen como CACHED porque usa la caché, además el proceso al leer el dockerfile fue mucho mas rápido.
 
 ## Mecanismo de caché
 Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso de construcción y evitar la repetición de pasos que no han cambiado. Cada instrucción en un Dockerfile crea una capa en la imagen final. Docker intenta reutilizar las capas de una construcción anterior si no han cambiado, lo que reduce significativamente el tiempo de construcción.
@@ -85,14 +86,15 @@ Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso
 
 ### Crear un contenedor a partir de las imagen creada, mapear todos los puertos
 ```
-
+docker run -d --name server-nginx -P server-nginx:1.1
+docker ps
 ```
 
 ### ¿Con que puerto host se está realizando el mapeo?
-# COMPLETAR CON LA RESPUESTA
+32768
 
 **¿Qué es una imagen huérfana?**
-# COMPLETAR CON LA RESPUESTA
+Son imágenes que no tienen nombre ni tag y tampoco están asociadas a ningún contenedor.
 
 ### Identificar imágenes huérfanas
 ```
