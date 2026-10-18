@@ -1,3 +1,7 @@
 # COMPLETAR  
 Comparando sus conocimientos antes de hacer la práctica con sus conocimientos después de hacer la tarea, explicar los principales aprendizajes logrados para beneficio de su formación profesional.  
 Si solucionó un problema presentado al realizar la práctica también se debe documentar.
+
+La práctica ayudó a conocer métodos de limitar los recursos como la memoria RAM, swap, conocer la diferencia entre ambas, limitar el usa del procesador, descubrir cuantos procesadores existentes posee el host, comandos para saber si un contenedor es saludable (healthcheck), la composición que tiene un archivo dockerfile, su funcionamiento y los tipos de funciones que se pueden poner en el mismo para poderlo pasar a todos los que lo necesiten y tener un punto de partida idéntico, cabe destacar que el dockerfile no tiene extension, o si se debe poner extension, será .dockefile, finalmente aprendí sobre las políticas de reinicio, las cuales son 4 (always, no, unless-stopped, on-failure) y sirven para reiniciar el contenedor (o no) según lo requiera el caso.
+Previo a la práctica desconocía de todo lo visto, no obstante, algo que me sorprendió fue el hecho que se puede crear imágenes propias con base en las imagenes ya documentadas, esto me pareció muy práctico para que cualquiera pueda experimentar con lo que desee.
+No hubo muchos errores, y los que hubo fueron por error de sintaxis o por incompletitud de los comandos. 
